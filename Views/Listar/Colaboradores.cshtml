@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["title"] = "Listar Colaboradores";
+}
+
+
+<div class="container">
+    <?php
+    include("templates/nvbar.php");
+    include("controler/loginobrigatorio.php");
+    ?>
+    <br>
+    <div class="container">
+
+        <form id="formcolaboradores">
+            <div class="container">
+                <h3 class="text-center"> Localização de colaborador</h3><BR></BR>
+                <div class="row">
+                    <div class="col-sm">
+                    </div>
+                    <div class="col-sm">
+                        <label for="localizadorcolaborador">Localizador</label>
+                        <input type="text" class="form-control" name="localizadorcolaborador" id="localizadorcolaborador">
+                    </div>
+                    <div class="col-sm">
+                    </div>
+                </div>
+            </div>
+        </form><BR>
+        <div class="row justify-content-sm-center">
+
+            <div class="col-sm">
+            </div>
+            <div class="col-sm">
+                <table class="table table-responsive table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Editar</th>
+                            <th scope="col">Nome </th>
+                            <th scope="col">Nick</th>
+                            <th scope="col">E-mail</th>
+                            <th scope="col">Endereço</th>
+                            <th scope="col">Telefone</th>
+                            <th scope="col">Função</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="resultadocolaborador">
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-sm">
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
