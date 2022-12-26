@@ -22,7 +22,11 @@
       "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "ConnectionStrings": {
+        "DefaultConnection": "Server=localhost;Database=MyApp;User Id=sa;Password=abc123;"
       }
     }
   }
+
 }
