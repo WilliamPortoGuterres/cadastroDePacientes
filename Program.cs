@@ -1,7 +1,21 @@
+﻿
+using cadastroDePacientes.Models;
+using cadastroDePacientes.Controllers;
+using Microsoft.EntityFrameworkCore;
+using cadastroDePacientes.Ressource;
+
 var builder = WebApplication.CreateBuilder(args);
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddEndpointsApiExplorer();
+
+builder.Services.AddSwaggerGen();
+
+builder.Services.AddDbContext<capsrestinga1Context>
+    (options => options.UseMySQL());
 
 var app = builder.Build();
 
@@ -13,6 +27,12 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+};
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
@@ -23,5 +43,6 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
 
 app.Run();

@@ -1,0 +1,263 @@
+﻿@model IEnumerable<cadastroDePacientes.Ressource.paciente>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.sexo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.situacaoderua)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.datadenascimento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cns)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.telefone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.telefone2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.escolaridade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tentativadesuicidio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nomedamae)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.endereco)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.endereco2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dataderegistro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.tr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ubsreferencia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.comparecimento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ativoinativo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.grupos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.comorbidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.beneficio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.rede)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ultimapresenca)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.atendimentotr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.vd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.numeroprontuario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.responsavel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cpf)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.rg)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.estadocivil)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cep)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.encaminhamentoporvia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.demandaespontanea)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nacionalidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.naturalidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.bairro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.acompanhante)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.sexo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.situacaoderua)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.datadenascimento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cns)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.telefone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.telefone2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.escolaridade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tentativadesuicidio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nomedamae)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.endereco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.endereco2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dataderegistro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ubsreferencia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.comparecimento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ativoinativo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.grupos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.comorbidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.beneficio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.rede)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ultimapresenca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.atendimentotr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.vd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.numeroprontuario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.responsavel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cpf)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.rg)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.estadocivil)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cep)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.encaminhamentoporvia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.demandaespontanea)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nacionalidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.naturalidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.bairro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.acompanhante)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.paciente_id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.paciente_id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.paciente_id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
